@@ -11,73 +11,41 @@
     <title>Quintin Herb Photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet"> 
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-    <header class="header">
-        <h1 class="primary-header">Quintin Herb
-            <span class="header-subtext">Photography</span>
-        </h1>
-    </header>
+    <div class="header-wrapper">
+        <header class="header">
+            <h1 class="primary-header">Quintin Herb<br>Photography</h1>
+            <a class="header__button" href="#pricing">Prices</a>
+            <a class="header__button" href="#gallery">Gallery</a>
+            <a class="header__button" href="#contact">Contact</a>
+        </header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#3B6262" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,101.3C384,85,480,75,576,80C672,85,768,107,864,133.3C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    </div>
 
-    <section class="image-section">
-        <img class="image-section__image" src="images/A1.jpg" alt="Two geese swimming" />
-        <img class="image-section__image" src="images/A5.jpg" alt="Male mallard standing in grass" />
-        <img class="image-section__image" src="images/A2.jpg" alt="Female mallard walking" />
-        <img class="image-section__image" src="images/A3.jpg" alt="Female mallard sitting in grass" />
-        <img class="image-section__image" src="images/A4.jpg" alt="Great egret in a tree" />
-        <img class="image-section__image" src="images/A6.jpg" alt="Babty duckling on a sidewalk" />
-    </section>
-
-    <section class="text-section">
-        <h2 class="text-section__header">I am <span class="gold-text">Quintin</span>,</h2>
-        <p class="text-section__body">a freelance photographer specializing in portraits operating in the York, Pennsylvania area.</p>
-    </section>
-
-    <section class="image-section">
-        <img class="image-section__image" src="images/B1.jpg" alt="Car exiting a tunnel" />
-        <img class="image-section__image" src="images/B2.jpg" alt="Mountains with clouds and blue skies" />
-        <img class="image-section__image" src="images/B3.jpg" alt="Two people in front of a waterfall" />
-        <img class="image-section__image" src="images/B4.jpg" alt="Small waterfalls with mountains in the background" />
-        <img class="image-section__image" src="images/B5.jpg" alt="Bridge connecting two mountains" />
-        <img class="image-section__image" src="images/B6.jpg" alt="Small creek with small waterfalls" />
-    </section>
-
-    <section class="text-section">
-        <h2 class="text-section__header">My <span class="gold-text">Services</span></h2>
+    <section class="section">
         <div class="row">
             <div class="column">
-                <p class="text-section__body">Individual Portraits</p>
-                <p class="text-section__body">Family Portraits</p>
-                <p class="text-section__body">Couples/Engagement Portraits</p>
+                <img class="avatar" src="images/avatar-blob.png" alt="Quintin avatar image" />
             </div>
             <div class="column">
-                <p class="text-section__body">Senior Photos</p>
-                <p class="text-section__body">Corporate Headshots</p>
-                <p class="text-section__body">Digital Retouching and Editing</p>
+                <h2 class="secondary-header">I am Quintin.</h2>
+                <p class="text">I am a freelance photographer specializing in portraits operating in the York, Pennsylvania area.  Please send any inquiries to <a href="mailto:quintin@quintinherb.net">quintin@quintinherb.net</a></p>
             </div>
         </div>
     </section>
 
-    <section class="image-section">
-        <img class="image-section__image" src="images/C1.jpg" alt="Portrait photo" />
-        <img class="image-section__image" src="images/C2.jpg" alt="Portrait photo" />
-        <img class="image-section__image" src="images/C3.jpg" alt="Portrait photo of a dog" />
-        <img class="image-section__image" src="images/C4.jpg" alt="Portrait photo" />
-        <img class="image-section__image" src="images/C5.jpg" alt="Portrait photo" />
-        <img class="image-section__image" src="images/C6.jpg" alt="Portrait photo of a dog" />
-    </section>
-
-    <section class="text-section">
-        <h2 class="text-section__header"><span class="gold-text">Packages</span> I Offer:</h2>
-        <div class="package">
-            <div class="package__left">
-                <h3 class="package__name">Basic Portraits</h3>
-                <!-- <h4 class="package__price">$150-300</h4> -->
+    <section class="section section--green" id="pricing">
+        <h2 class="secondary-header secondary-header--light">My Packages</h2>
+        <div class="row package">
+            <div class="column align-right">
+                <h3 class="tertiary-header">Basic Portraits</h3>
+                <span class="package__price">$150 - $300</span>
             </div>
-            <div class="package__right">
+            <div class="column align-left">
                 <ul class="package__list">
                     <li>One-hour photoshoot at a single location</li>
                     <li>15 fully-edited high-resolution digital images</li>
@@ -85,12 +53,12 @@
                 </ul>
             </div>
         </div>
-        <div class="package">
-            <div class="package__left">
-                <h3 class="package__name">Family Portraits</h3>
-                <!-- <h4 class="package__price">$250-500</h4> -->
+        <div class="row package">
+            <div class="column align-right">
+                <h3 class="tertiary-header">Family Portraits</h3>
+                <span class="package__price">$250 - $500</span>
             </div>
-            <div class="package__right">
+            <div class="column align-left">
                 <ul class="package__list">
                     <li>Two-hour photoshoot at a single location</li>
                     <li>15 fully-edited high-resolution digital images</li>
@@ -99,26 +67,26 @@
                 </ul>
             </div>
         </div>
-        <div class="package">
-            <div class="package__left">
-                <h3 class="package__name">Couples/Engagement</h3>
-                <!-- <h4 class="package__price">$300-600</h4> -->
+        <div class="row package">
+            <div class="column align-right">
+                <h3 class="tertiary-header">Couples / Engagement</h3>
+                <span class="package__price">$200 - $400</span>
             </div>
-            <div class="package__right">
+            <div class="column align-left">
                 <ul class="package__list">
                     <li>Two-hour photoshoot at multiple locations</li>
-                    <li>25 fully-edited high-resolution digital images</li>
+                    <li>20 fully-edited high-resolution digital images</li>
                     <!--<li>Free canvas print of chosen photo</li>-->
                     <li>Online gallery for viewing and downloading photos</li>
                 </ul>
             </div>
         </div>
-        <div class="package">
-            <div class="package__left">
-                <h3 class="package__name">Senior Pictures</h3>
-                <!-- <h4 class="package__price">$200-400</h4> -->
+        <div class="row package">
+            <div class="column align-right">
+                <h3 class="tertiary-header">Senior Pictures</h3>
+                <span class="package__price">$200 - $400</span>
             </div>
-            <div class="package__right">
+            <div class="column align-left">
                 <ul class="package__list">
                     <li>Two-hour photoshoot at multiple locations</li>
                     <li>20 fully-edited high-resolution digital images</li>
@@ -126,12 +94,12 @@
                 </ul>
             </div>
         </div>
-        <div class="package">
-            <div class="package__left">
-                <h3 class="package__name">Corporate Headshots</h3>
-                <!-- <h4 class="package__price">$50-100</h4> -->
+        <div class="row package">
+            <div class="column align-right">
+                <h3 class="tertiary-header">Coprorate Headshots</h3>
+                <span class="package__price">$50 - $100</span>
             </div>
-            <div class="package__right">
+            <div class="column align-left">
                 <ul class="package__list">
                     <li>30-minute photoshoot at a single location</li>
                     <li>6 fully-edited high-resolution digital images</li>
@@ -139,21 +107,57 @@
                 </ul>
             </div>
         </div>
-        <p class="text-section__body italic">For more information or other services, contact me at quintin@quintinherb.net</p>
     </section>
 
-    <section class="text-section text-section--light pb-12">
-        <h2 class="text-section__header text-section__header--dark"><span class="gold-text bold">Contact</span> Me</h2>
-        <p class="text-section__body text-section__body--dark">Email:  <a class="link" href="mailto:quintin@quintinherb.net">quintin@quintinherb.net</a></p>
-        <p class="text-section__body text-section__body--dark">Instagram:  <a class="link" href="https://www.instagram.com/quintinherbphotography/">@QuintinHerbPhotography</a></p>
-        <p class="text-section__body text-section__body--dark">Facebook:  <a class="link" href="https://www.facebook.com/QuintinHerbPhotography">Quintin Herb Photography</a></p>
+    <section class="section" id="gallery">
+        <h2 class="secondary-header">Gallery</h2>
+        <div class="gallery">
+            <div class="gallery__row">
+                <img class="gallery__image" src="images/image-2.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-3.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-7.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-9.jpg" alt="Gallery image" />
+            </div>
+            <div class="gallery__row">
+                <img class="gallery__image" src="images/image-4.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-5.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-6.jpg" alt="Gallery image" />
+            </div>
+            <div class="gallery__row">
+                <img class="gallery__image" src="images/image-10.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-11.jpg" alt="Gallery image" />
+            </div>
+            <div class="gallery__row">
+                <img class="gallery__image" src="images/image-13.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-14.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-15.jpg" alt="Gallery image" />
+            </div>
+            <div class="gallery__row">
+                <img class="gallery__image" src="images/image-16.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-17.jpg" alt="Gallery image" />
+            </div>
+            <div class="gallery__row">
+                <img class="gallery__image" src="images/image-1.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-12.jpg" alt="Gallery image" />
+                <img class="gallery__image" src="images/image-8.jpg" alt="Gallery image" />
+            </div>
+        </div>
     </section>
+
+    <footer class="footer" id="contact">
+        <h2 class="secondary-header secondary-header--light">Contact Me</h2>
+        <ul class="contact-list">
+            <li>Email:  <a class="contact-link" href="mailto:quintin@quintinherb.net">quintin@quintinherb.net</a></li>
+            <li>Instagram:  <a class="contact-link" href="https://www.instagram.com/quintinherbphotography/">@QuintinHerbPhotography</a></li>
+            <li>Facebook:  <a class="contact-link" href="https://www.facebook.com/QuintinHerbPhotography">Quintin Herb Photography</a></li>
+        </ul>
+    </footer>
 
     <div class="modal" id="modal" onclick="closeModal()">
-        <img class="modal__image" id="modal-image" src="images/C6.jpg" alt="Portrait photo of a dog" />
-        <a class="modal__close" onclick="closeModal()">&times;</a>
+        <img class="modal__image" id="modal-image" src="images/image-1.jpg" alt="Gallery image" />
+        <button class="modal__close" onclick="closeModal()">&times;</button>
     </div>
-    
+
     <script src="scripts/main.js"></script>
 </body>
 </html>
