@@ -278,4 +278,8 @@ html, body {
         height: auto;
         width: 80%;
     }
+    
+    .text {
+        padding: 0;
+    }
 }
