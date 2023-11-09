@@ -176,6 +176,7 @@ html, body {
     width: 100%;
     cursor: pointer;
     transition: 0.2s ease;
+    overflow: hidden;
 }
 
 .gallery__image:hover {
